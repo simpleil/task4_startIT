@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script src="main.js"></script>
+</body>
+</html>
+
+function consoleNumbers() {
+	var i = 1;
+	var timer = setTimeout(function consoleNum() {
+		console.log(i);
+		if (i < 20) i++;
+		timerId = setTimeout(consoleNum, 100);
+	}, 100);
+}
+consoleNumbers();
